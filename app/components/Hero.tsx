@@ -1,5 +1,9 @@
 import { Link } from 'react-router';
-const Hero = ({ text = 'Check out my projects and learn more about me.' }) => {
+
+type HeroProps = { text?: string };
+const Hero: React.FC<HeroProps> = ({
+  text = 'Check out my projects and learn more about me.',
+}) => {
   return (
     <header className='text-center bg-gray-900 text-white py-20 px-4 transition-colors duration-300'>
       <h2 className='text-4xl font-bold mb-4'>Welcome to Portfolio Dev 👋</h2>
