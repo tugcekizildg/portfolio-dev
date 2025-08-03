@@ -3,6 +3,14 @@ import type { Route } from './+types/index';
 import type { Project } from '~/types';
 import ProjectCard from '~/components/ProjectCard';
 import Pagination from '~/components/Pagination';
+import { AnimatePresence, motion } from 'framer-motion';
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: 'The Portfolio Dev | Projects' },
+    { name: 'description', content: 'Project page for The Portfolio Dev' },
+  ];
+}
 
 export async function loader({
   request,
@@ -16,7 +24,7 @@ const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   //for pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 2;
+  const projectsPerPage = 10;
 
   const { projects } = loaderData as { projects: Project[] };
 
@@ -65,12 +73,16 @@ const ProjectsPage = ({ loaderData }: Route.ComponentProps) => {
           </button>
         ))}
       </div>
+      <AnimatePresence mode='wait'>
+        <motion.div layout className='grid gap-6 sm:grid-cols-2'>
+          {currentProjects.map((project) => (
+            <motion.div key={project.id} layout>
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
 
-      <div className='grid gap-6 sm:grid-cols-2'>
-        {currentProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
