@@ -88,7 +88,7 @@ Built with ❤️ using React Router.
 
 ## Screenshots
 
-![HomePage Desktop Screenshot](./PortfolioDevDestopSc.png)
+![HomePage Desktop Screenshot](./PortfolioDevDesktopSc.png)
 ![HomePage Mobile Screenshot](./PortfolioDevMobileSc.png)
 ![Projects Mobile Screenshot](./PortfolioDevMobileScreenshot.png)
 ![Projects Desktop Screenshot](./PortfolioDevDesktopScreenshot.png)
