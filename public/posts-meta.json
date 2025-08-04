@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "slug": "react-performance-optimization",
+    "title": "Optimizing React Performance: Tips and Techniques",
+    "excerpt": "Learn how to boost React app speed using memoization, lazy loading, and more.",
+    "date": "2025-04-05T00:00:00"
+  },
+  {
+    "id": "2",
+    "slug": "modern-css-layouts",
+    "title": "Mastering Modern CSS Layouts",
+    "excerpt": "A deep dive into Flexbox, Grid, and container queries for responsive design.",
+    "date": "2025-03-22T00:00:00"
+  },
+  {
+    "id": "3",
+    "slug": "secure-rest-api-design",
+    "title": "Designing Secure REST APIs",
+    "excerpt": "Key practices to protect your REST APIs from common vulnerabilities.",
+    "date": "2025-03-10T00:00:00"
+  },
+  {
+    "id": "4",
+    "slug": "javascript-debugging-guide",
+    "title": "The Complete Guide to Debugging JavaScript",
+    "excerpt": "Use browser tools, breakpoints, and logging effectively to fix bugs fast.",
+    "date": "2025-02-28T00:00:00"
+  },
+  {
+    "id": "5",
+    "slug": "fullstack-deployment-strategies",
+    "title": "Full-Stack Deployment Strategies for 2025",
+    "excerpt": "Compare hosting options and CI/CD workflows for modern full-stack apps.",
+    "date": "2025-02-15T00:00:00"
+  }
+]
